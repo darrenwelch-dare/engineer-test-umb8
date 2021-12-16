@@ -1,0 +1,22 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.TestCanvas>
+    @using ContentModels = Umbraco.Web.PublishedModels;
+    @using Clean.Core.ViewModels
+    @using Clean.Core.Extensions
+    @{
+    Layout = "master.cshtml";
+    }
+
+
+    @Html.Partial("~/Views/Partials/pageHeader.cshtml", new PageHeaderViewModel(Model.Name, Model.Title, Model.Subtitle, Model.MainImage))
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div id="root"></div>
+                </div>
+            </div>
+    </div>
+                
+    @section scripts{    
+    <script src="~/frontend/dist/scripts/index.js"></script>
+    }
