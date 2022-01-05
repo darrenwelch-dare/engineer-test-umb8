@@ -20,6 +20,9 @@ Using the application it should be possible to:
 - Add a new item to a list
 - Mark an item as complete
 - Mark an item as incomplete
+
+###### Additional Task
+If you have any spare time.  Add sub-items to the to-do list.
 - Add a sub-list to a list item and mark them as complete/incomplete
 
 ## Rules
